@@ -111,6 +111,6 @@ if prompt := st.chat_input("Ask me anything..."):
                 response = "**Rukmitha**:\nI'm sorry, I cannot answer that question."
         except Exception as e:
             response = f"An error occurred: {e}"
-    
+
     st.session_state.messages.append({"role": "assistant", "content": response})
     st.rerun()
